@@ -4,6 +4,7 @@
   "main": "manifest.js",
   "license": "UNLICENSED",
   "dependencies": {
-    "crypto": "^1.0.1"
+    "crypto": "^1.0.1",
+    "express": "^4.17.1"
   }
 }
