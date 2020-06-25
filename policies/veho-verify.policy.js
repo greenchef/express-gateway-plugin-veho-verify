@@ -23,10 +23,7 @@ module.exports = {
           }
           return false;
         });
-        if (!foundApiKey) {
-          res.sendStatus(401);
-          return;
-        };
+        foundApiKey ? console.log(' Veho Signature was verified') : console.log(' Veho Signature was not verified');
       } catch (e) {
         console.error('Error in veho-verify policy:', e.error);
         res.sendStatus(500);
