@@ -1,0 +1,9 @@
+{
+  "name": "express-gateway-plugin-veho-verify",
+  "version": "1.0.0",
+  "main": "manifest.js",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
