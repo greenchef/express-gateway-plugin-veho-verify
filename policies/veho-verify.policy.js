@@ -1,4 +1,4 @@
-import crypto from 'crypto';
+const crypto = require('crypto');
 
 module.exports = {
   name: 'veho-verify',
@@ -23,10 +23,9 @@ module.exports = {
           }
           return false;
         });
-        foundApiKey ? console.log(' Veho Signature was verified') : console.log(' Veho Signature was not verified');
+        foundApiKey ? console.log(' Veho Signature was verified') : console.error(' Veho Signature was not verified');
       } catch (e) {
         console.error('Error in veho-verify policy:', e.error);
-        res.sendStatus(500);
         return;
       }
       next();
