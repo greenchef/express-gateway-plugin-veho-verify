@@ -1,5 +1,5 @@
 module.exports = {
-  version: '1.2.3',
+  version: '1.2.4',
   init: (pluginContext) => {
      pluginContext.registerPolicy(require('./policies/veho-verify.policy'))
   },
